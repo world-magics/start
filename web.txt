@@ -1,0 +1,4 @@
+faylni zipdan chiqarish cmd command
+ tar -xf start.zip
+ //------------------------
+ 

@@ -16,13 +16,13 @@ body{
 .container{
     padding: 0 10px;
     margin:a auto;
-    box-shadow: 0 38px 16px 0 rgba(0,0,0,0.2);
+  
 }
 .header__top{
     display: flex;
     justify-content: space-between;
     padding-top: 27px;
-    border-bottom: 15px solid rgba(0, 0, 0, 0.007);
+  
 }
 .logo{
     margin-left: 16px;
@@ -56,4 +56,80 @@ body{
   -moz-transition: 5000s ease-in-out;
   -ms-transition: 5000s ease-in-out;
   -o-transition: 5000s ease-in-out;
+}
+.header__content{
+    background-image: url(../images/new1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.title{
+    font-family: 'Roboto Slab',serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 95px;
+    color: #001E64;
+    max-width: 589px;
+    padding-top: 200px;
+    padding-left: 112px;
+    margin-bottom: 130px;
+
+}
+.header__slider{
+    max-width: 522px;
+    padding-left: 112px;
+    padding-top: 57px;
+    padding-bottom: 135px;
+}
+.header__slider__text{
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+.slick-prev,.slick-next{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    left: 40px;
+  
+   
+}
+.slick-prev{
+    top:0;  
+}
+.slick-next{
+    bottom: 0;
+}
+.slick-dots{
+    list-style: none;
+    position: absolute;
+    left: 35px;
+    top: 58px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.slick-dots button{
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.slick-active button{
+    opacity: 1;
+}
+.slick-dots button::before{
+    content:'0';
+}
+.slick-dots li:nth-child(n+10) button::before{
+    content:'';
 }

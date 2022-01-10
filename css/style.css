@@ -170,3 +170,15 @@ body{
     color: white;
 
 }
+.product{
+    padding-top: 100px;
+
+}
+.product__inner{
+    display: flex;
+    justify-content: space-between;
+
+}
+.product__content{
+        width: 600px;
+}

@@ -20,7 +20,7 @@ $(function(){
         slidesToScroll: 1,
         asNavFor: '.product__name',
         fade: true,
-        arrow:false,
+        arrows:false
       });
 //End second slider for header next
 

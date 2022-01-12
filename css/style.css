@@ -16,7 +16,7 @@ body{
 .container{
     max-width: 1220px;
     padding: 0 10px;
-    margin:a auto;
+    margin:1px auto;
   
 }
 .header__top{
@@ -222,6 +222,7 @@ body{
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
 }
 .product__content__box{
     display: flex;
@@ -300,4 +301,53 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.seafood {
+    padding: 100px 0;
+ }
+.seafood__items {
+    margin-bottom: 100px;
+}
+.seafood__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.seafood__item-content {
+
+}
+.seafood__item-title {
+    font-family: 'Roboto Slab',serif;
+    max-width: 490px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #001E64;
+}
+.seafood__item-text {
+    max-width: 420px;
+    margin-bottom: 20px;
+
+}
+.seafood__item-img {
+}
+.seafood_blockquote {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.seafood__blockquote-img {
+}
+.seafood__blockquote-text {
+    max-width: 530px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+ .seafood__item--text-right .seafood__item-title{
+max-width: 420px;
+}
+.seafood__item--text-right .seafood__item-content{
+    margin-right: 180px;
 }

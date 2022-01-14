@@ -23,6 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+
   
 }
 .logo{
@@ -38,6 +39,7 @@ body{
 }
 .menu{
    margin-top: 16px;
+   
    
 }
 .menu__item+.menu__item{
@@ -452,6 +454,7 @@ max-width: 420px;
     padding: 13px 0;
     position: relative;
     display: none;
+    z-index: 10;
 }
 .menu__btn::after,
 .menu__btn::before{
@@ -474,15 +477,173 @@ display: block;
 height: 4px;
 background-color: #001E64;
 }
-
+@media(max-width:1160px){
+    .product__name{
+        width: 350px;
+    }
+}
 @media (max-width:1000px) {
-   .menu__list{
-       display: none;
+  .header .menu__list{
+       position: absolute;
+       left: 20%;
+       right: 20%;
+       background-color: #fff;
+       display: block;
+       top: -350px;
+       transition: all .5s ;
+       -webkit-transition: all .5s ;
+       -moz-transition: all .5s ;
+       -ms-transition: all .5s ;
+       -o-transition: all .5s ;
+       z-index: 5;
+}
+   .menu__link:hover{
+       border: none;
+   }
+   .menu__list .menu__list--active{
+       top:75px;
    }
    .menu__btn{
-       display:inline-block;
+       display:block;
+       cursor: pointer;
    }
    .menu{
-       margin-left: auto;
+        margin: 12px 20px 0 auto;
+
    }
+   .menu__item+.menu__item{
+       margin-left: 0;
+   }
+   .menu__link{
+       padding: 20px 0;
+       display: block;
+       text-align: center;
+       /* pointer-events: none; */
+     
+   }
+   .product__name{
+    width: 250px;
+}
+
+}
+@media (max-width:890px){
+    .product__inner{
+        display: block;
+    }
+    .product__content{
+        margin: 0 auto;
+    }
+    .product__name{
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 80px;
+        /* width: 250px; */
+    }
+  .product__name-item.slick-current{
+      line-height: 44px;
+  }
+  .product__name .slick-dots{
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: center;
+       
+
+}
+.product__name.slick-dots button{
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    padding: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #c4c4c4;
+    margin: 0 5px;
+}
+.product__name .slick-active button{
+    background-color: #001E64;
+}
+}
+
+@media (max-width:745px){
+    .title{
+        font-size: 50px;
+        line-height: 66px;
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+}
+@media (max-width:650px){
+    .product__content{
+        width: 100%;
+    }
+    .seafood-box__items{
+        display: block;
+    }
+    .seafood-box__item{
+        margin: 0 auto 30px;
+    }
+    .seafood-box{
+      display: none;
+    }
+ 
+}
+@media (max-width:600px){
+    .product__content__box{
+        display: block;
+    }
+    .product__content-list{
+        width: 100%;
+    }
+}
+@media (max-width:470px){
+   .header__slider{
+       padding-left: 50px;
+   }
+   .slick-dots{
+       left: 5px;
+   }
+   .slick-prev,.slick-next{
+       left: 9px;
+   }
+   .header__content_btn{
+       margin-left: 50px;
+   }
+   .title{
+       font-size: 34px;
+       line-height: 44px;
+   }
+   .product__content__btn{
+       padding: 12px 55px;
+   }
+   .product{
+       padding-top: 50px;
+   }
+}
+@media (max-width:360px){
+    .title{
+        padding-top: 125px;
+    }
+    .phone{
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .menu__list{
+        left: 10%;
+        right: 10%;
+    }
+    .header__slider{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .header__content_btn{
+        margin-left: 0;
+    }
 }
